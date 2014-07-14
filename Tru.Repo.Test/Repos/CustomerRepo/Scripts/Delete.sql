@@ -1,0 +1,1 @@
+﻿DELETE TruTest.Customer WHERE Email = @Email

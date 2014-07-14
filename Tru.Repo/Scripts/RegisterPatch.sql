@@ -1,0 +1,1 @@
+﻿INSERT INTO Tru.Repo VALUES(@RepoName, @PatchVersion, GETUTCDATE(), @PatchText)

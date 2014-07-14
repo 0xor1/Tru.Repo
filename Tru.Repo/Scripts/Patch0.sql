@@ -1,0 +1,10 @@
+﻿CREATE SCHEMA Tru
+
+CREATE TABLE Tru.Repo
+(
+	RepoName NVARCHAR(100) NOT NULL,
+	PatchVersion INT NOT NULL,
+	PatchDateUtc DATETIME NOT NULL,
+	PatchText NVARCHAR(MAX) NOT NULL,
+	CONSTRAINT PK_Tru_Repo_RepoName_PatchVersion PRIMARY KEY CLUSTERED (RepoName, PatchVersion)
+)

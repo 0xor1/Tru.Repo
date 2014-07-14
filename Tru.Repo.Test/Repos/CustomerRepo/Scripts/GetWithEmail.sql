@@ -1,0 +1,1 @@
+﻿SELECT * FROM TruTest.Customer WHERE Email = @Email
