@@ -54,20 +54,24 @@
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Given_a_valid_sql_connection_string.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repos\CustomerRepo\Scripts\CustomerRepoScript.Designer.cs">
+    <Compile Include="Repos\CustomerRepo\CustomerRepoScript.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomerRepoScript.resx</DependentUpon>
     </Compile>
-    <Compile Include="Repos\TestRepo\Scripts\TestRepoScript.Designer.cs">
+    <Compile Include="Repos\ErrorRepos\NestedPatchSequenceRepo.cs" />
+    <Compile Include="Repos\ErrorRepos\WhiteSpaceRepoNameRepo.cs" />
+    <Compile Include="Repos\ErrorRepos\NullRepoNameRepo.cs" />
+    <Compile Include="Repos\ErrorRepos\PatchCalledOutsidePatchSequenceRepo.cs" />
+    <Compile Include="Repos\TestRepo\TestRepoScript.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TestRepoScript.resx</DependentUpon>
     </Compile>
-    <Compile Include="Repos\TestRepo\TestRepo.cs" />
-    <Compile Include="Repos\CustomerRepo\ICustomerRepo.cs" />
-    <Compile Include="Repos\CustomerRepo\CustomerRepo.cs" />
-    <Compile Include="TestScript.Designer.cs">
+    <Compile Include="Repos\TestRepo.cs" />
+    <Compile Include="Repos\ICustomerRepo.cs" />
+    <Compile Include="Repos\CustomerRepo.cs" />
+    <Compile Include="TestScripts\TestScript.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TestScript.resx</DependentUpon>
@@ -80,27 +84,27 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Repos\TestRepo\Scripts\TestRepoScript.resx">
+    <EmbeddedResource Include="Repos\TestRepo\TestRepoScript.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TestRepoScript.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Repos\CustomerRepo\Scripts\CustomerRepoScript.resx">
+    <EmbeddedResource Include="Repos\CustomerRepo\CustomerRepoScript.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CustomerRepoScript.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestScript.resx">
+    <EmbeddedResource Include="TestScripts\TestScript.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TestScript.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Repos\CustomerRepo\Scripts\GetWithEmail.sql" />
-    <Content Include="Repos\CustomerRepo\Scripts\GetWithLastName.sql" />
-    <Content Include="Repos\CustomerRepo\Scripts\GetWithFirstName.sql" />
-    <Content Include="Repos\CustomerRepo\Scripts\Save.sql" />
-    <Content Include="Repos\CustomerRepo\Scripts\Delete.sql" />
-    <Content Include="Repos\TestRepo\Scripts\Patch0.sql" />
-    <Content Include="Repos\CustomerRepo\Scripts\Patch0.sql" />
+    <Content Include="Repos\CustomerRepo\GetWithEmail.sql" />
+    <Content Include="Repos\CustomerRepo\GetWithLastName.sql" />
+    <Content Include="Repos\CustomerRepo\GetWithFirstName.sql" />
+    <Content Include="Repos\CustomerRepo\Save.sql" />
+    <Content Include="Repos\CustomerRepo\Delete.sql" />
+    <Content Include="Repos\TestRepo\Patch0.sql" />
+    <Content Include="Repos\CustomerRepo\Patch0.sql" />
     <Content Include="TestScripts\Cleanup.sql" />
     <Content Include="TestScripts\Initialize.sql" />
   </ItemGroup>
