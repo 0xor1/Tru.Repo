@@ -13,7 +13,7 @@ namespace Tru.Repo.Test.Repos
 {
     public class CustomerRepo: TestRepo, ICustomerRepo
     {
-        private const string RepoName = "TruTest.CustomerRepo";
+        private const string RepoName = "TruTest.Customer";
         private static bool HasPatched;
 
         public CustomerRepo(string connection)

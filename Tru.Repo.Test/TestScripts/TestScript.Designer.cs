@@ -39,7 +39,7 @@ namespace Tru.Repo.Test {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tru.Repo.Test.TestScript", typeof(TestScript).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tru.Repo.Test.TestScripts.TestScript", typeof(TestScript).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
